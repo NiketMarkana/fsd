@@ -31,7 +31,6 @@ public class PatientController {
 
     @GetMapping("/appointment")
     public ModelAndView appointment() {
-
         Patient patient = new Patient();
         patient.setPatientGender("Male");
         patient.setPatientAddress(new PatientAddress());
@@ -44,7 +43,6 @@ public class PatientController {
             @Valid @ModelAttribute("patient") Patient patient,
             BindingResult bindingResult
     ) {
-
         if (bindingResult.hasErrors()) {
             return new ModelAndView("appointment", "patient", patient);
         }

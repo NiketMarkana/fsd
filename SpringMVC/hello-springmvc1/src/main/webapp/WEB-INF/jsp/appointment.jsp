@@ -11,7 +11,7 @@
 <h1>${mainHeader}</h1>
 <h2>Patient Appointment Registration</h2>
 
-<form:form method="post" action="addappointment" modelAttribute="patient">
+<form:form method="post" action="post" modelAttribute="patient">
 
     <table>
 
